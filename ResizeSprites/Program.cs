@@ -22,13 +22,13 @@ namespace ResizeSprites {
             if (!Directory.Exists(outpath)) Directory.CreateDirectory(outpath);
 
             // Tell our user what to do next.
-            Console.WriteLine("Please place your RPG Maker VX Formatted sprites in the input folder where this application resides.");
+            Console.WriteLine("Please place your sprites in the input folder where this application resides.");
             Console.WriteLine("Once you've done this, hit any key to continue.");
             Console.WriteLine(String.Empty);
             Console.ReadKey();
 
             // Ask our user what to use to resize it.
-            Console.WriteLine("How much larger do our sprites need to be become? (1 = 100%, 2 = 200%, 2.5 = 250% etc.)");
+            Console.WriteLine("What modifier do you want to use to resize your sprite with? (0.5 = 50%, 1 = 100%, 2 = 200%, 2.5 = 250% etc.)");
             var modifier = Single.Parse(Console.ReadLine());
             Console.WriteLine(String.Empty);
 
